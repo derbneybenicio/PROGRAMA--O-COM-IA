@@ -1,37 +1,60 @@
-/* Vamos falar com o 'body', que é o corpo inteiro do site */
+/* Configuração Geral */
 body {
-    background-color: #282c34; /* Um fundo cinza escuro, cor de programador */
-    color: white;             /* Letras brancas */
-    display: flex;            /* Ferramenta mágica para alinhar coisas */
-    justify-content: center;  /* Centraliza na horizontal */
-    align-items: center;      /* Centraliza na vertical */
-    height: 100vh;            /* Ocupa a altura toda da tela do seu monitor */
-    margin: 0;                /* Tira espaços sobrando nas bordas */
+    background-color: #f0f2f5; /* Um cinza bem clarinho para o fundo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center;     /* Centraliza na vertical */
+    height: 100vh;           /* Faz o fundo ocupar 100% da altura da tela */
+    margin: 0;
 }
 
-/* Agora vamos falar com a nossa caixa 'div' que chamamos de 'caixa-principal' */
-.caixa-principal {
-    background-color: #333;
-    padding: 50px;            /* Espaço interno para não ficar tudo apertado */
-    border-radius: 20px;      /* Arredonda os cantos da caixa */
-    text-align: center;       /* Centraliza o texto dentro da caixa */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Cria uma sombra para parecer que a caixa flutua */
+/* Estilo da "Caixa" do Cartão */
+.cartao {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;     /* Bordas arredondadas */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombra suave para dar profundidade */
+    text-align: center;
+    width: 300px;
 }
 
-/* Estilo do número que vai aumentar */
-#resultado {
-    font-size: 80px;          /* Número bem grande */
-    margin: 20px 0;           /* Espaço em cima e embaixo do número */
-    color: #61dafb;           /* Um azul brilhante */
+/* Estilo da Foto */
+.foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;      /* Deixa a imagem redonda */
+    border: 3px solid #007bff;
+    margin-bottom: 15px;
 }
 
-/* Estilo do botão */
-button {
-    padding: 15px 30px;
-    font-size: 20px;
-    cursor: pointer;          /* Faz aparecer a "mãozinha" quando passa o mouse */
-    background-color: #4CAF50;/* Cor verde */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cargo {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Estilo dos Botões */
+.link {
+    display: block;
+    background-color: #007bff;
     color: white;
-    border: none;             /* Tira aquela borda feia que vem de fábrica */
-    border-radius: 5px;
+    text-decoration: none;   /* Tira o sublinhado padrão do link */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;        /* Faz a cor mudar suavemente ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);  /* Dá um leve aumento no botão */
 }
