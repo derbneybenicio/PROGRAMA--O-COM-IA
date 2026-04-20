@@ -1,0 +1,37 @@
+/* Vamos falar com o 'body', que é o corpo inteiro do site */
+body {
+    background-color: #282c34; /* Um fundo cinza escuro, cor de programador */
+    color: white;             /* Letras brancas */
+    display: flex;            /* Ferramenta mágica para alinhar coisas */
+    justify-content: center;  /* Centraliza na horizontal */
+    align-items: center;      /* Centraliza na vertical */
+    height: 100vh;            /* Ocupa a altura toda da tela do seu monitor */
+    margin: 0;                /* Tira espaços sobrando nas bordas */
+}
+
+/* Agora vamos falar com a nossa caixa 'div' que chamamos de 'caixa-principal' */
+.caixa-principal {
+    background-color: #333;
+    padding: 50px;            /* Espaço interno para não ficar tudo apertado */
+    border-radius: 20px;      /* Arredonda os cantos da caixa */
+    text-align: center;       /* Centraliza o texto dentro da caixa */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Cria uma sombra para parecer que a caixa flutua */
+}
+
+/* Estilo do número que vai aumentar */
+#resultado {
+    font-size: 80px;          /* Número bem grande */
+    margin: 20px 0;           /* Espaço em cima e embaixo do número */
+    color: #61dafb;           /* Um azul brilhante */
+}
+
+/* Estilo do botão */
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;          /* Faz aparecer a "mãozinha" quando passa o mouse */
+    background-color: #4CAF50;/* Cor verde */
+    color: white;
+    border: none;             /* Tira aquela borda feia que vem de fábrica */
+    border-radius: 5px;
+}
